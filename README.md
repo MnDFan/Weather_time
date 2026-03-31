@@ -1,5 +1,7 @@
 # Weather Time Widget
 
+> 🤝 **Ce repo accepte toute sorte de contributions et sont auto-approuvées, n'hésitez pas à contribuer !**
+
 Un package React réutilisable pour afficher la météo et l'heure dans vos applications Next.js.
 
 ## Features
