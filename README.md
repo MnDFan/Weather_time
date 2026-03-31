@@ -269,3 +269,5 @@ MIT
 ## Support
 
 Pour les problèmes ou les demandes de fonctionnalités, veuillez créer une issue sur GitHub.
+
+Clean test from synced fork
