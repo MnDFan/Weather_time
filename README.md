@@ -269,3 +269,6 @@ MIT
 ## Support
 
 Pour les problèmes ou les demandes de fonctionnalités, veuillez créer une issue sur GitHub.
+
+---
+_Test PR from external contributor_
