@@ -1,14 +1,12 @@
 name: Auto Merge PRs
  
- on:
+on:
    pull_request_target:  # <-- Important: _target au lieu de pull_request
      types: [opened, synchronize, reopened]
- 
- permissions:
+permissions:
    contents: write
    pull-requests: write
- 
- jobs:
+jobs:
    auto-merge:
      runs-on: ubuntu-latest
      steps:
