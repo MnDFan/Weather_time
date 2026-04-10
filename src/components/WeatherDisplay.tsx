@@ -52,8 +52,8 @@ export function WeatherDisplay({
     <div className={`weather-display ${className}`}>
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h3 className="text-gray-600 text-sm mb-1">{description}</h3>
-          <p className="text-4xl font-bold text-gray-800">
+          <h3 className="text-gray-300 text-sm mb-1">{description}</h3>
+          <p className="text-4xl font-bold text-white">
             {displayTemp}
             {tempUnit}
           </p>
@@ -61,12 +61,12 @@ export function WeatherDisplay({
         <div>{ICON_MAP[icon] || ICON_MAP.cloud}</div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-gray-200">
+      <div className="grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-gray-700">
         <div className="flex items-center gap-2">
           <Droplets className="w-4 h-4 text-blue-400" />
           <div>
-            <p className="text-xs text-gray-500">Humidity</p>
-            <p className="text-sm font-semibold text-gray-700">
+            <p className="text-xs text-gray-400">Humidity</p>
+            <p className="text-sm font-semibold text-gray-200">
               {data.humidity}%
             </p>
           </div>
@@ -74,8 +74,8 @@ export function WeatherDisplay({
         <div className="flex items-center gap-2">
           <Wind className="w-4 h-4 text-gray-400" />
           <div>
-            <p className="text-xs text-gray-500">Wind</p>
-            <p className="text-sm font-semibold text-gray-700">
+            <p className="text-xs text-gray-400">Wind</p>
+            <p className="text-sm font-semibold text-gray-200">
               {displayWind} {windUnit}
             </p>
           </div>

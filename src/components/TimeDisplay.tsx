@@ -43,8 +43,8 @@ export function TimeDisplay({
 
   return (
     <div className={`time-display ${className}`}>
-      <p className="text-2xl font-semibold text-gray-800">{formattedTime}</p>
-      {showDate && <p className="text-sm text-gray-600 mt-1">{formattedDate}</p>}
+      <p className="text-2xl font-semibold text-white">{formattedTime}</p>
+      {showDate && <p className="text-sm text-gray-300 mt-1">{formattedDate}</p>}
     </div>
   );
 }

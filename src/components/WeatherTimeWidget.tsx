@@ -24,16 +24,16 @@ export function WeatherTimeWidget({
 
   if (error) {
     return (
-      <div className={`p-4 bg-red-50 border border-red-200 rounded-lg ${className}`}>
-        <p className="text-red-700 font-semibold">Weather Error</p>
-        <p className="text-red-600 text-sm">{error.message}</p>
+      <div className={`p-4 bg-red-900 border border-red-700 rounded-lg ${className}`}>
+        <p className="text-red-300 font-semibold">Weather Error</p>
+        <p className="text-red-400 text-sm">{error.message}</p>
       </div>
     );
   }
 
   return (
     <div
-      className={`weather-time-widget bg-white rounded-lg shadow-md p-6 ${className}`}
+      className={`weather-time-widget bg-black rounded-lg shadow-lg shadow-red-500/20 p-6 border border-red-800 ${className}`}
     >
       {showTime && (
         <div className="mb-6">
@@ -49,7 +49,7 @@ export function WeatherTimeWidget({
         <div>
           {loading ? (
             <div className="flex items-center justify-center h-40">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-500"></div>
             </div>
           ) : weather ? (
             <WeatherDisplay data={weather} units={units} />
@@ -57,7 +57,7 @@ export function WeatherTimeWidget({
         </div>
       )}
 
-      <div className="mt-6 text-center text-gray-600 italic">
+      <div className="mt-6 text-center text-red-300 italic">
         <p>Pendant que vous jouiez aux héros… j'écrivais les règles du jeu.</p>
         <p>Et maintenant, vous avez déjà perdu</p>
       </div>
