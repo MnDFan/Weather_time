@@ -56,6 +56,11 @@ export function WeatherTimeWidget({
           ) : null}
         </div>
       )}
+
+      <div className="mt-6 text-center text-gray-600 italic">
+        <p>Pendant que vous jouiez aux héros… j'écrivais les règles du jeu.</p>
+        <p>Et maintenant, vous avez déjà perdu</p>
+      </div>
     </div>
   );
 }
